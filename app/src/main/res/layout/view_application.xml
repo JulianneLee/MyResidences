@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="380dp">
+
+    <TextView
+        android:id="@+id/appID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="20dp"
+        android:text="Application ID:"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/appIDEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_toEndOf="@+id/appID"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="application ID"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/residenceID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appID"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
+        android:text="Residence Applied:"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/rIDEditText"
+        android:layout_width="206dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="15dp"
+        android:layout_toEndOf="@+id/residenceID"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="residence ID"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/reqMonth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="113dp"
+        android:text="Required Month:"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/reqMonthEditText"
+        android:layout_width="202dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="102dp"
+        android:layout_marginEnd="14dp"
+        android:layout_toEndOf="@+id/reqMonth"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="required Month"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/reqYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="156dp"
+        android:text="Required Year:"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/reqYearEditText"
+        android:layout_width="202dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="148dp"
+        android:layout_marginEnd="14dp"
+        android:layout_toEndOf="@+id/reqYear"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="required Year"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="202dp"
+        android:text="Status:"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/rejectBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/status"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="66dp"
+        android:layout_toEndOf="@+id/waitlistBtn"
+        android:text="Reject" />
+
+    <Button
+        android:id="@+id/approveBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/status"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="65dp"
+        android:text="Approve" />
+
+    <Button
+        android:id="@+id/waitlistBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/status"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="64dp"
+        android:layout_toEndOf="@+id/approveBtn"
+        android:text="Waitlist" />
+
+    <EditText
+        android:id="@+id/statusEditText"
+        android:layout_width="201dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reqYearEditText"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="121dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="14dp"
+        android:layout_toEndOf="@+id/status"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="status"
+        android:inputType="textPersonName"
+        android:textSize="18sp" />
+
+</RelativeLayout>
